@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'popins', sans-serif;
+    color: #F1DAC4;
+}
+nav{
+    text-align: center;
+    margin: 5px auto  ;
+    padding: 1em;
+    background-color: #161b33b8;
+    font-size:  max(1.2vw,1em);
+    box-shadow: 0px 0px 30px hsla(249, 98%, 19%, 0.5);
+    width: 80%;
+    border-radius: 1rem;
+}
+nav:hover{
+    box-shadow: 0px 0px 30px hsla(249, 98%, 19%, 0.8);
+}
+nav>h1:hover{
+    text-shadow: 1px 1px 10px #f1dac4bc;
+}
+body{
+    min-height: 100vh;
+    background-image: linear-gradient(to top left,rgba(0,0,0,0.7),rgba(0,0,0,0.6)),url(./image/img1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    gap: 2em;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all 1s ease;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    max-width: 90%;
+    margin: 2em auto;
+    padding: 1.5em;
+    gap: .5em;
+} 
+button{
+    position: absolute;
+    padding: 1em .5em;
+    font-size: 1.5em;
+    color: #F1DAC4;
+    top: 40vh;
+    border: none;
+    background-color:  transparent;
+}
+button:hover{
+    background-color: #F1DAC4;
+    border-radius: 1rem;
+    color: black;
+    transform: scale(1.1 , 1.1);
+    transition: all .3s ease;
+}
+#left-btn{
+    left: 0px;
+}  
+#right-btn{   
+    right: 5px;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 45%;
+    justify-content: center;
+    min-height: 15em;
+    background-color: #161b33b1;
+    padding: 1.5em;
+    border-radius: 1rem; 
+    text-align: justify; 
+}
+.content:hover{
+    transform: scale(1.2 , 1.2);
+    transition: all 1s ease;
+}
+.content h2{
+    margin-bottom: 1em;
+}
+.content p{
+    max-width: 60ch;
+}
+.slider{
+   display: flex;
+   flex-basis: 40%; 
+   min-height: 15em;
+   padding: .5em;
+   overflow: hidden;
+   align-items: center;
+}
+.image{
+    padding: .5em;
+}
+
+.image>img{
+    border-radius: 1em;
+    object-fit: cover;
+}
+.image>img:hover{
+    transform: scale(1.1 , 1.1);
+    transition: all 1s ease;
+}
+
+@media screen and (max-width: 768px){
+    .content{
+        flex-basis: 100%;
+        margin-bottom: 1.5rem;
+    } 
+    .slider{
+        display: none;
+    }
+    #left-btn,#right-btn{
+        display: none;
+    }
+}
