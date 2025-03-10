@@ -1,4 +1,4 @@
-import {title,content} from './content.js';
+import {title,content} from './content';
 let Title = title();
 let Content = content();
 
