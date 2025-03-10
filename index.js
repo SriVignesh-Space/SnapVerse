@@ -5,7 +5,6 @@ let Content = content();
 const imgArr = ['img0.webp','img1.webp','img2.webp','img3.webp','img4.webp','img5.webp','img6.webp','img7.webp']
 
 const gradient = "linear-gradient(to top left ,rgba(0,0,0,0.7),rgba(0,0,0,0.6))"
-~
 
 function addImage(index){
     let img = document.querySelectorAll('.slider .image img');
