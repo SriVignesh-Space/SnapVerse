@@ -1,4 +1,4 @@
-import {title,content} from './content.js';
+import {title,content} from './contents.js';
 let Title = title();
 let Content = content();
 
@@ -42,7 +42,7 @@ setInterval(()=>{
     addImage(index);
     changeBg(index);
     index = (index + 1) % imgArr.length;
-},5000)
+},3000)
 
 function next(){
     console.log("in next");
